@@ -1,0 +1,36 @@
+package simplilearnFinalProject;
+
+import java.io.File;
+
+public class LockedMe {
+	static final String projectFilesPath="C:\\Users\\C Prassan\\Desktop\\LockedMeFiles";
+	public static void displayMenu() {
+		System.out.println("********************************************");
+		System.out.println("\tWELCOME TO LockedMe.com secure app");
+		System.out.println("\tDeveloped by Prassan Achhaiyya");
+		System.out.println("********************************************");
+		System.out.println("\t1. Display all the files");
+		System.out.println("\t2. Add a new file");
+		System.out.println("\t3. Delete Files");
+		System.out.println("\t4. Search file");
+		System.out.println("\t5. Exit");
+		System.out.println("********************************************");
+		}
+	public static void getAllFiles() {
+		File folder =new File(projectFilesPath);
+		File[] listOfFiles = folder.listFiles();
+		for(var l:listOfFiles) {
+			System.out.println(l.getName());
+		}
+	}
+	public static void createFiles() {
+		
+	}
+	public static void deleteFiles() {
+		
+	}
+	public static void searchFiles() {
+		
+	}
+
+}
